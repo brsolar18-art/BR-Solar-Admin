@@ -22,6 +22,15 @@ export default function Navbar() {
         >
           Customers / Requests
         </NavLink>
+
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? "admin-nav-link active" : "admin-nav-link"
+          }
+        >
+          Projects
+        </NavLink>
       </nav>
     </header>
   );
